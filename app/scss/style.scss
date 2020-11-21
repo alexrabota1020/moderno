@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(207, 91, 13);
+}
+.content__circle{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(231, 180, 12);
+	border-radius: 50%;
+	position: relative;
+	left: 0;
+	margin-top: 10px;
+
+	animation: white-circle 2s linear infinite alternate 0s forwards;
+	
+}
+p {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+
+
+@keyframes white-circle{
+	0%{
+left: 0;
+	}
+	50%{
+		border-radius: 0%;
+	}
+	100%{
+left: 300px;
+	}
+}
